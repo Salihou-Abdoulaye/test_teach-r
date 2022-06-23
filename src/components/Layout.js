@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../img/logo (1).png";
 import circle_1 from "../img/number-circle-one-thin-svgrepo-com.svg";
 import circle_2 from "../img/number-circle-two-thin-svgrepo-com.svg";
@@ -12,9 +12,7 @@ import Paiement from "./Paiement";
 
 const Layout = () => {
   const [formStep, setFormStep] = useState(0);
-  const [matiere, setMatiere] = useState('')
-
-  
+  const [matiere, setMatiere] = useState('');
 
   const nextForm = () => {
     setFormStep((cur) => cur + 1);
